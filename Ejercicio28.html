@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="p5.js"></script>
+</head>
+ 
+<body>
+   <script>
+ let listaCirculos = []
+       class Circulo {
+           constructor(x, y, r, color) {
+               this.x = x
+               this.y = y
+               this.r = r
+               this.color = color
+           }
+           dibujar() {
+                fill(this.color)
+		        circle(this.x, this.y, this.r*2)
+           }
+       }
+ 
+       function generarCirculo() {
+           // PASO 1: este método genera un círculo aleatorio
+           // y lo devuelve
+           let x=numeroAleatorio(0, width)
+           let y=numeroAleatorio(0, width)
+           let r=numeroAleatorio(20, 50)
+           let c=Math.random=new circle(x,y,r,c)
+           return nuevoCirculo;
+
+
+
+       }
+ 
+       function numeroAleatorio(min, max) {
+           return Math.round(Math.random() * (max - min) + min);
+       }
+ 
+       function setup() {
+           createCanvas(400, 400);
+       }
+ 
+       function draw() {
+           background(220);
+           // PASO 6 aquí generas continuamente circulo nuevos
+           //y los metes en la lista dibujo todos los círculos
+          
+           // PASO 2 aquí tienes que dibujar todos los círculos
+           // de la lista
+          
+           // PASO 5 aquí muestras el score del jugador
+ 
+       }
+ 
+       function colisionMouseCirculo(mx, my, circulo) {
+           // PASO 3   Este método devolverá un booleado
+           // indicando si hay colisión entre el ratón y el círculo
+       }
+ 
+       function mousePressed() {
+           // PASO 4   Este método determina que hacer cuando
+           // hay colisión con algún círculo
+          
+           // PASO 7 Aquí determina si el jugo termina
+       }
+   </script>
+</body>
+ 
+</html>
